@@ -2,10 +2,10 @@
 import React from 'react';
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
-import getConfig from 'next/config';
+// import getConfig from 'next/config';
 
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath || '';
+// const { publicRuntimeConfig } = getConfig();
+// const basePath = publicRuntimeConfig.basePath || '';
 
 const HeroSection = () => {
   return (
@@ -44,7 +44,7 @@ const HeroSection = () => {
 
         <div className="col-span-5 place-self-center mt-4 lg:mt-0 ">
         <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
-            <Image 
+            <img
                 src={`${basePath}/images/portfolio-portrait.png`}
                 alt="portrait"
                 width={300}
