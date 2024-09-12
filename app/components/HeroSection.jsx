@@ -2,6 +2,10 @@
 import React from 'react';
 import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
+import getConfig from 'next/config';
+
+const { publicRuntimeConfig } = getConfig();
+const basePath = publicRuntimeConfig.basePath || '';
 
 const HeroSection = () => {
   return (
